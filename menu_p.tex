@@ -1,0 +1,76 @@
+\documentclass{llncs}
+%Package to generate dummy text for demonstration purposes
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{longtable} % Required for tables that span multiple pages
+\usepackage{enumitem} % Required for customizing enumerate environment
+\usepackage{array} % Required for customizing table columns
+\usepackage{booktabs} % For better horizontal lines in tables
+\usepackage{tabularx} % For auto-width columns
+%\usepackage[margin=2cm]{geometry} % Adjust margin size
+%\usepackage{titlesec}
+%\usepackage{sectsty}
+\usepackage{fancyhdr}
+\usepackage{cite}
+%\usepackage{microtype}
+\usepackage{adjustbox}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\setstretch{1.2} % Ajusta o espaçamento para 1.2 vezes o espaçamento padrão
+\raggedbottom % Prevents LaTeX from stretching the page content to fill the height
+\usepackage{babel}
+\usepackage{hyphenat}
+\hyphenation{your-word-list}
+\usepackage{amssymb}
+\tolerance=2000
+\emergencystretch=12pt
+
+% Metadata
+\title{Natural Language Processing for Software Requirements Validation: State of the Art Review}
+\author{António Soares Martins\inst{1} 
+\and Pedro Dinis Loureiro Salgueiro\inst{2} 
+\and Vítor Beires Nogueira\inst{3}}
+\institute{Centro Algoritmi/LASI, University of Évora, Portugal\newline
+\email{\{d54029@alunos.uevora.pt, pds@uevora.pt, vbn@uevora.pt\}}}
+
+% Configurando o estilo de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Natural Language Processing for Software Requirements Validation}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+\maketitle
+
+% Abstract
+\input{resumo}
+\clearpage
+
+% Body of the article
+\input{introdução}
+%\lipsum[1]
+\clearpage
+
+\input{metodologia}
+%\lipsum[2]
+\clearpage
+
+\input{revisão_literatura}
+%\lipsum[3]
+\clearpage
+
+\input{discussão}
+%\lipsum[4]
+\clearpage
+
+\input{conclusão}
+%\lipsum[5]
+\clearpage
+
+% Bibliography
+\bibliographystyle{splncs04}
+\bibliography{bibliografy} % Specify your .bib file
+\end{document}

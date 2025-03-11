@@ -1,0 +1,87 @@
+\section{Literature Review}
+\sloppy
+In this review, we will present the state of the art regarding software requirements validation and NLP.
+\subsection{Software requirements validation methods}
+Different methods are used in validating software requirements, each with specific approaches \cite{Wiegers2013}. Reviews, such as inspections, identify errors and ambiguities, prototyping helps visualize the system, modelling and simulation ensure consistency of requirements, and formal techniques offer rigour, being essential in critical systems. With technological advancements, new approaches such as NLP are integrated into software requirements validation to improve effectiveness \cite{AvilaPaldes2016, bird2009, Sommerville2016}. The correct application of these methods ensures the quality of the system, stakeholder satisfaction and the success of the project \cite{Wiegers2013}.
+\begin{enumerate}
+ \item \textbf{Requirements Reviews} Requirements reviews are essential to ensure the quality and adequacy of a software system's requirements. This systematic process involves a thorough analysis of requirements documents to identify potential problems such as ambiguities, inconsistencies, omissions and errors \cite{Sommerville2016}. The objectives of requirements reviews are to ensure the clarity, completeness and comprehensibility of requirements, identify and correct errors early in the development cycle, and align stakeholder's expectations with system specifications.
+ To effectively apply the Requirements review method, it is recommended to bring together a diverse team of reviewers, including analysts, customers, developers and testers. Conducting informal preliminary reviews helps identify issues early in the process, while staff training ensures the consistency and productivity of reviews. Writing tests based on requirements and deriving tests from them helps ensure coverage and correspondence between requirements and tests. Mapping tests to functional requirements is critical to avoiding forgotten requirements and ensuring proper validation \cite{Sommerville2016}.
+ The advantages of the requirements review method include improving software quality, reducing costs by avoiding rework, collective learning provided by the participation of a diverse team, and validating requirements against the needs of stakeholders \cite {Sommerville2016}. However, it is important to consider limitations such as the time and resources required, the possibility of bias in identifying defects, the complexity of the process, and the need for adequate training for reviewers \cite{davis2013mastering}.
+ \item \textbf{Inspections and Walkthroughs}\ Model inspections and walkthroughs are software artefact review techniques used to ensure the quality, accuracy, and completeness of documents such as requirements, design, code, and documentation \cite{davis2013mastering}. \begin{itemize} \item \textbf{Inspections Model}\ The requirements inspection method is a structured and formal approach to reviewing and validating software requirements, intending to ensure that they are correct, complete, consistent and meet the needs of stakeholders. During inspections, a team of experienced reviewers examines requirements documents for errors, inconsistencies, omissions, and quality issues. The process involves planning, conducting, identifying defects, analyzing and resolving and continuous improvement. Advantages include early detection of problems, quality improvement, knowledge sharing and documentation of defects, while limitations involve time and resources, complexity, possible resistance and the need for constant updating of criteria and guidelines.
+    \item \textbf{Walkthroughs}\\
+ The walkthrough model is a software review technique in which the author of the document or code conducts a structured session with other team members to review and discuss the material presented. During the walkthrough process, participants identify possible problems, errors, omissions and improvements, to improve the quality of the final product. Based on \cite{Wiegers2013}, enhanced guidance is provided on how to conduct an effective requirements walkthrough. This includes preparing for a walkthrough, conducting the session, discussing and analyzing requirements, identifying improvements and post-walkthrough action and follow-up. Some advantages of this method include early identification of problems, collaborative feedback, improved understanding, and learning opportunities. However, there are limitations, such as the time and resources required, the subjectivity of the participants, the lack of focus and the need for preparation.
+\end{itemize}
+\item \textbf{Prototyping}
+ The text highlights modelling as a systematic and mathematical approach to specifying and analyzing software requirements precisely and rigorously, using formal languages to represent system functionalities and constraints. The process of validating software requirements with modelling involves tasks such as precise specification, automated analysis, identification of conflicts, and verification of important system properties \cite{Wiegers2013}. The advantages of using modelling in validating software requirements include accuracy and clarity in representing requirements, early detection of problems, and automated verification of system properties. On the other hand, the limitations of modelling in validating software requirements involve complexity, additional cost, increased time demands, and limited interpretation for stakeholders unfamiliar with mathematical concepts.
+\end{enumerate}
+\subsection{NLP technologies related to LLMs}
+Natural Language Processing (NLP) is a subarea of artificial intelligence focused on the interaction between computers and human language \cite{eisenstein2019}. It encompasses analysis and understanding of natural language text and speech to perform tasks such as machine translation, sentiment analysis, and named entity recognition. Using techniques from computational linguistics and machine learning, NLP enables systems to understand, interpret, and respond to textual and spoken data.
+
+On the other hand, Large Language Models (LLMs) are NLP models trained on vast sets of textual data, containing billions of parameters, capable of predicting the next word in a sequence and capturing a wide range of linguistic patterns and contexts \cite{hou2023}. Examples of LLMs include BERT, GPT, BART, RoBERTa, ELNet, ERNIE, and T5. In addition to the individual models, there is the LLaMA collaboration (Large Language Model Meta AI), which exemplifies the evolution and capacity of these models in understanding and generating natural language. This strategic collaboration is fundamental to driving innovation in the field of language models, exploring advanced machine-learning techniques and promoting the exchange of knowledge between diverse institutions and researchers \cite{tsai2023llamaloop}.
+
+NLP technologies with LLMs can be divided into several categories based on their usage, development and application. Key NLP technologies and techniques often interact or integrate with LLMs:
+
+\begin{enumerate}
+ \item \textbf{Text Preprocessing}\\ Text preprocessing plays a key role in the field of NLP as it prepares textual data for more advanced analysis \cite{smith2020preprocessing}.
+ \begin{itemize}
+    \item Tokenization: Splitting text into smaller units, such as words or subwords, to facilitate processing by LLMs.
+    \item Lemmatization and Stemming: Reduction of words to their base or root form, useful for simplifying and standardizing the text.
+    \item Removal of Stopwords: Elimination of common words that do not contribute significantly to the meaning of the text, reducing noise.
+ \end{itemize}
+
+ \item \textbf{Text Representation Modeling}\\
+ These advanced text representation modelling techniques not only improve the accuracy of NLP applications but also open up new possibilities for NLP in diverse domains and practical applications \cite{Devlin2019}.
+ \begin{itemize}
+ \item Word Embeddings (e.g. Word2Vec, GloVe):\\Dense, low-dimensional representations of words in a vector space, which served as the basis for the development of LLMs \cite{acheampong2021transformer}.
+ \item Contextual Embeddings (e.g., BERT, GPT, and BART): Representations that consider the context in which a word appears, allowing for a richer and more accurate understanding \cite{devlin2018bert}.
+ \end{itemize}
+\item\textbf{Transformer-Based Language Models}\\
+ Transformer-based language models have revolutionized the field of NLP by introducing an architecture that significantly overcomes the limitations of traditional recurrent neural networks \cite{vaswani2017}
+ \begin{itemize}
+ \item BERT (Bidirectional Encoder Representations from Transformers): Model that captures bidirectional relationships in text, being used for tasks such as sentiment analysis, NER, and question answering \cite{devlin2018bert}.
+ \item GPT (Generative Pre-trained Transformer): Model focused on text generation, used in tasks such as machine translation, text summarization and content creation \cite{Khurana2023}.
+ \item T5 (\textbf{Text-To-Text Transfer Transformer}): Model that treats all NLP tasks as text-to-text conversion problems, increasing the flexibility and usefulness of the \cite{Khurana2023} model.
+ \item RoBERTa (Robustly optimized BERT approach): An optimized version of BERT with better performance on various NLP tasks \cite{polignano2019alberto}.
+ \item BART (Bidirectional and Auto-Regressive Transformers) represents a significant evolution in the family of transformer models, expanding the capabilities of seq2seq models by integrating both bidirectional coding and autoregressive generation into a single architecture \cite{belzner2023large}.
+\end{itemize}
+    These models have not only improved the accuracy of NLP tasks but also opened up new possibilities for natural language generation and understanding in a wide range of applications.
+ \item \textbf{NLP Tasks Made Easy by LLMs}
+ \begin{itemize}
+ \item {Sentiment Analysis}: Evaluation of the sentiment expressed in texts, such as reviews of products or comments on social networks \cite{liu2022sentiment}.
+ \item Named Entity Recognition (NER): Identification and classification of entities mentioned in the text, such as names of people, places, organizations \cite{belzner2023large}.
+ \item Machine Translation: Automatic translation of texts between different languages.
+ \item Text Summarization: Summarizing long texts into shorter, more informative versions \cite{han2021transformer}.
+ \item Question Answering: Answering questions based on a set of data or texts provided \cite{Devlin2019}.
+ \item Text Generation: Creating coherent and contextually relevant texts from provided prompts.
+ \end{itemize}
+ \item \textbf{Tools and Platforms}
+ \begin{itemize}
+ \item Transformers Library (Hugging Face): Popular library that makes it easy to use and implement transformer-based models \cite{hou2023}.
+ \item TensorFlow and PyTorch: Machine learning frameworks that support training and implementing LLMs \cite{Beysolow2018}.
+ \item SpaCy: NLP library that supports integration with pre-trained language models \cite{Beysolow2018}.
+ \item NLTK (Natural Language Toolkit): Library that provides tools for basic NLP tasks, often used in conjunction with LLMs for preprocessing \cite{Beysolow2018}.
+\end{itemize}
+ \item \textbf{Relationship between LLMs and NLP Technologies}
+\begin{enumerate}
+ \item Interdependence
+ \begin{itemize}
+ \item LLMs rely on basic NLP techniques such as tokenization and lemmatization to preprocess text before training and inference.
+ \item Advanced NLP technologies such as sentiment analysis and NER significantly benefit from LLMs' ability to understand context and generate rich representations of text.
+ \end{itemize}
+ \item Complementarity
+ \begin{itemize}
+ \item LLMs can improve the accuracy and efficiency of traditional NLP tasks by providing deeper, contextually rich understanding.
+ \item NLP techniques and tools help prepare data for LLMs and refine their outputs for specific applications.
+ \end{itemize}
+ \item Continuous Development
+ \begin{itemize}
+ \item The advancement of LLMs drives the development of new NLP techniques, which in turn contribute to the evolution of even more powerful language models.
+ \item Innovations in preprocessing and text representation continue to improve the performance of LLMs on a variety of NLP tasks.
+ \end{itemize}
+
+LLMs represent a significant evolution in the field of NLP, leveraging existing techniques and technologies while leveraging new capabilities and applications in NLP \cite{Devlin2019,brown2020, Liu2023,lewis2020,raffel2020t5}.
+ \end{enumerate}
+ \end{enumerate}
+\subsubsection{}
+
+

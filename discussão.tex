@@ -1,0 +1,165 @@
+\section{Discussion}
+\paragraph{}
+\sloppy
+This comprehensive analysis aims to provide a holistic view of the current state of software requirements validation, highlighting where we are, existing gaps, and future opportunities for integrating advanced technologies such as NLP.
+\subsection{Comparison of revised methods}
+\paragraph{}
+Table 1 compares these traditional and modern software requirements validation methods, highlighting the main evaluation criteria \cite{Wiegers2013, Pohl2015,freeth2012nlp, Anas2016,davis2013mastering}.
+\begin{longtable}[htbp]{|p{2.5cm}|p{4.5cm}|p{4.5cm}|}
+\caption{Summary Comparison of Revised Methods}\\
+\hline
+\textbf{Criteria} & \textbf{Traditional Methods} \newline (Reviews, Inspections, Walkthroughs) & \textbf{Modern Methods} \newline (Prototyping, Modeling) \\
+\hline
+\endfirsthead
+%\hline \multicolumn{3}{|r|}{{Continued on next page}} \\
+\hline
+\endfoot
+\hline
+\endlastfoot
+Accuracy & Good, but subject to human error & High, especially with NLP and modelling tools\\
+\hline
+Efficiency & Lower, due to the need for manual review & High, due to automation\\
+\hline
+Cost & May be high due to human time and effort & May be high due to human time and effort \\
+\hline
+Scalability & Difficult in large & High projects, especially with automated tools\\
+\hline
+Flexibility & High, but dependent on reviewers' experience & High, but requires technical knowledge of the tools\\
+\hline
+Complexity & Low to moderate & Moderate to high
+\end{longtable}
+
+\sloppy
+Below, we will detail the criteria evaluated and how each method behaves about these criteria, based on the data in Table 1, providing a solid basis for selecting software requirements validation methods.
+\begin{itemize}
+\sloppy
+ \item \textbf{Accuracy}: Traditional methods are effective but subject to human error, while modern methods offer high accuracy, especially with modelling. This indicates that modern methods tend to be more accurate due to automation and advanced technologies. \cite{Wiegers2013}.
+ \item \textbf{Efficiency}: Traditional methods are less efficient due to the need for manual review. In contrast, modern methods are more efficient thanks to automation, which reduces the need for manual review and speeds up the validation process. \cite{Wiegers2013}.
+ \item \textbf{Cost}: Both methods can have high costs due to the time and human effort involved. However, automation in modern methods can reduce costs in the long run despite the initial investment. \cite{Wiegers2013}.
+ \item \textbf{Scalability}: Traditional methods struggle with large projects, while modern methods offer high scalability, especially with automated tools that can manage larger projects effectively. \cite{Wiegers2013}.
+ \item \textbf{Flexibility}: Both methods are quite flexible; however, modern methods may require greater technical mastery of the tools used. \cite{Wiegers2013}.
+ \item Implementation Complexity: Traditional methods have low to moderate implementation complexity. In contrast, modern methods have moderate to high implementation complexity, due to the need for technical knowledge of modern tools \cite{Wiegers2013}.
+ \end{itemize}
+ \sloppy
+ Traditional software requirements validation methods are widely known and have been effective for many years. However, they may have limitations in terms of efficiency and scalability. On the other hand, modern methods, such as the use of NLP and modelling, provide greater accuracy and efficiency. However, its implementation requires greater technical knowledge and may involve higher initial costs. Selecting the most appropriate method should take into account the specific needs of the project, the size of the team and the availability of necessary tools and resources. \cite{Wiegers2013}.
+
+\subsection{Identification of Gaps in Literature}
+\paragraph{}
+Identifying gaps in the literature is crucial to advancing scientific knowledge, highlighting areas in need of detailed research or innovative approaches. In this section, we will explore gaps in the current literature on, specific the topic, analyzing recent contributions, methodological limitations, and emerging areas that require additional attention, aiming to promote future investigations and critical dialogue about research directions.
+\begin{itemize}
+ \item The article "Requirements Validation Techniques Factors Influencing them" \cite{Kumar2023} highlights the broad coverage of validation techniques, the emphasis on automated tools such as NLP, machine learning and AI, and consideration of factors that influence techniques, such as system complexity and team experience.
+ Recommendations to improve the selection and application of techniques include conducting comprehensive assessments, exploring automated tools, considering influencing factors, integrating techniques into the development cycle, and promoting collaboration and communication among stakeholders. Organizations must seek to constantly improve their software requirements validation practices, incorporating feedback and innovations to achieve better results and higher-quality software products.
+ \item The article "Resume Validation and Filtration using Natural Language Processing" by \cite{Alamelu2021}, Addresses the use of NLP techniques to extract information from resumes. However, it lacks details on specific methods of extraction and its evaluation in terms of accuracy and effectiveness.
+ It is recommended that future research explores the improvement of NLP algorithms, integration of multimodal data, customization of the screening process, large-scale performance evaluation, interpretability of results, and practical feasibility of the system in different recruitment contexts.
+
+ \item The article "Requirements Validation via Automated Natural Language Parsing" by \cite{nanduri1995}, Highlights the innovation in using a natural language parser to validate software requirements, bringing efficiency and accuracy. Contributes to validation automation by demonstrating how automated analysis can generate object models and provide valuable feedback. The article recognizes the limitations of the parser, such as the need to rewrite sentences and deal with ambiguities, presenting a realistic view of the technology.
+ It recommends more extensive empirical validation, including case studies for comparison with traditional methods, and suggests further exploring the applicability and scalability of the approach. It also proposes a detailed analysis of the practical feasibility of implementation, considering costs and integration with existing tools. For future research, it recommends comprehensive empirical studies, investigation of the generalization and scalability of the technique, integration with requirements engineering processes, use of emerging technologies, and interdisciplinary collaboration.
+  \item The article MaramaAIC: tool support for consistency management and validation of requirements \cite{kamalrudin2017maramaaic} highlights an automated tool of great relevance for managing consistency and validating software requirements. The text provides a detailed description of the methodology used in the development and evaluation of the tool, highlighting its limitations, such as the need for improvements in usability and the library of interaction patterns. The generalizability of the results and future perspectives are also addressed, including the integration of advanced NLP techniques. The introduction of NLP in software requirements validation has the potential to revolutionize software development, improving the accuracy, efficiency and quality of the process. Various techniques, such as completeness analysis, consistency checking, validity validation, realism analysis, ambiguity detection and variability analysis, are explored, each presenting its challenges and benefits, highlighting the significant potential of NLP to improve quality. Of software development.
+ Recommendations include layout and labelling improvements, integration with GUI templates, improving traceability support, supporting partial selection of changes, expanding the library of interaction patterns, and conducting a longitudinal study. These suggestions aim to optimize the user experience and ensure consistency and effectiveness in the validation and traceability of requirements in software development projects.
+
+ \item The article "Challenges of Software Requirements Quality "Assurance and Validation: A Systematic Literature Review", presents a systematic review of the literature on the validation of software requirements \cite{Atoum2021}. Analyze the most adopted validation techniques, the quality characteristics of the requirements the significant challenges faced in this process categories of quality characteristics of the requirements, and tools and datasets adopted in these techniques. Validation techniques were grouped into categories such as prototyping. , inspection, knowledge-oriented, test-oriented, modelling and evaluation, and formal models highlight the trend of applying machine learning techniques in validating software requirements, along with challenges related to requirements expression and customer feedback. Some important recommendations include exploring different domains: It is recommended to conduct studies and tests in a variety of domains to evaluate the effectiveness and applicability of software requirements validation techniques in different contexts. Scalability: Consider the scalability of software requirements validation techniques to ensure they can handle systems of different sizes and complexities. Comparison with other methodologies: Carry out comparisons between different software requirements validation methodologies to identify the advantages and disadvantages of each approach and determine the most appropriate one for a given scenario. Model interpretability techniques: Investigate and develop techniques that improve the interpretability of models used in validating software requirements, to facilitate the understanding of decisions made by the system.
+ \end{itemize}
+
+Table 2 summarizes the gaps and recommendations identified by the reviewed articles.
+\begin{longtable}[htbp]{|p{2.70cm}|p{4.5cm}|p{4.5cm}|}
+\caption{Summary of Gaps and Recommendations}\\
+\hline
+\textbf{Category} & \textbf{Identified Gaps} & \textbf{Recommendations} \\
+\hline
+\endfirsthead
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+\sloppy
+Evaluation and Comparison of Techniques \cite{kumar2021, Alamelu2021, nanduri1995, Atoum2021}
+&
+\raggedright 1. Lack of clear performance metrics and comprehensive comparisons with other approaches \newline.
+2. Lack of need for detailed empirical studies to validate techniques.
+ &
+\raggedright
+1. Develop clear performance metrics and perform comprehensive comparisons with other approaches.\newline
+2. Carry out detailed empirical studies to validate the proposed techniques.\\
+\cr
+\hline
+\raggedright
+Exploration and Integration of Tools \cite{kumar2021,Alamelu2021,nanduri1995} &
+1. There is a lack of need for continuous improvements in NLP algorithms.\newline
+2. Lack of multimodal data integration.\newline
+3. Lack of in-depth exploration of automated tools in different contexts and domains.
+ &
+1. Continuous improvements to NLP algorithms.\newline
+2. It is necessary to integrate multimodal data.
+3. Explore more deeply the use of automated tools in different contexts and domains.\\
+
+\hline
+\sloppy Influencing and Contextual Factors \cite{kumar2021,Atoum2021} &
+1. Lack of detailed consideration of how different contextual factors influence the effectiveness of techniques\newline.
+2. There is a lack of variety of domains to evaluate the generalization of techniques.
+ &
+1. Consider factors such as system complexity and team experience.
+2. Explore different domains to evaluate the applicability of techniques.\\
+
+\hline
+Scalability \&\ Generalization \cite{Atoum2021,nanduri1995}
+&
+1. Lack of need for scalability of techniques in large and complex systems.\newline
+2. Lack of validation of the applicability of techniques in different scenarios and project sizes.
+&
+1. Improving the scalability of techniques for large and complex systems.\newline
+2. Validation of the applicability of techniques in different scenarios and project dimensions.\\
+
+\hline
+ Integration in the Development Cycle,\cite{kumar2021,nanduri1995} &
+1. Lack of clear guidelines on how to effectively integrate validation techniques into the existing development cycle.\newline
+2. There is a lack of need for studies on the effectiveness of integration at different phases of the development cycle.
+\newline
+ &
+1. Development of clear guidelines for the effective integration of validation techniques into the existing development cycle.\newline
+2. Carrying out studies on the effectiveness of integration at different stages of the development cycle. \\
+\hline
+
+Improved collaboration and communication between stakeholders \cite{kumar2021}
+&
+1. Lack of studies on best practices to promote collaboration and effective communication between stakeholders during software requirements validation.\newline
+2. There is a lack of need to explore the impact of communication on the success of software requirements validation.
+&
+Conduct systematic studies to identify and document best practices that promote collaboration and effective communication between \textit{stakeholders} during software requirements validation.
+
+Investigate the impact of communication on the effectiveness of requirements validation, aiming to optimize the project's final results.\\
+
+\hline
+\raggedright
+Interpretation and Understanding of Models
+\cite{Atoum2021, nanduri1995, Alamelu2021}
+&
+\raggedright
+1. Lack of effective techniques to improve model interpretability.\newline
+2. Need for comprehensive empirical studies to validate interpretability.\newline
+3. Lack of adequate customization of the screening process for different contexts.
+
+ &
+\raggedright
+1. Continuous research and development of innovative techniques to improve the interpretability of the models used.\newline
+2. Conducting comprehensive empirical studies to validate and compare the interpretability of these models.\newline
+3. Adaptation and customization of the screening process to meet the specific needs of different contexts and application scenarios.
+
+\end{longtable}
+
+\subsection{Potentials Integration of NLP in Software Requirements Validation}
+The integration of NLP technologies into software requirements validation has the potential to revolutionize software development, providing advances in accuracy, efficiency and quality.\cite{Alamelu2021}. These techniques can be applied in several areas, each with its benefits and challenges \cite{Wiegers2013}. For example:
+\begin{itemize}
+ \item Completeness and integrity analysis ensure the presence of all necessary aspects in the requirements, using tokenization, embeddings and automatic summarization to identify gaps and reduce manual review time \cite{Acheampong2021}. However, this approach requires specific training and structured knowledge bases. \cite{polignano2019alberto}.
+ \item Consistency checking ensures the logical coherence of requirements through techniques such as cosine similarity and named entity recognition, although it is challenging to set appropriate thresholds and deal with multiple valid interpretations \cite{Kamalrudin2015, Belzner2023}.
+ \item Validity validation verifies that requirements correctly reflect stakeholder expectations, using sentiment analysis and text classification to improve clarity and alignment, despite difficulties in capturing emotional nuances \cite{lewis2020,sonbol2022,polignano2019alberto}.
+ \item Realism analysis evaluates the feasibility of requirements by comparing them with existing benchmarks, facing challenges in maintaining updated knowledge bases\cite{Devlin2018}.
+ \item Ambiguity detection identifies ambiguous terms and suggests fixes to improve documentation, although dealing with variable contexts is complex \cite{Devlin2018}.
+ \item Variability analysis considers the flexibility of requirements, identifying patterns and modelling rules, but requires capturing a wide range of scenarios \cite{Devlin2018}.
+\end{itemize}
+In summary, the integration of NLP techniques into software requirements validation presents significant potential for improving the quality of software development, despite the associated challenges.\newline
+The article \cite{Gartner2024} introduces the ALICE platform, which combines formal logic and large language models (LLMs) to detect contradictions in engineering requirements using precise reasoning, rule-based inference, and pattern recognition from LLMs. Its methodology, with expanded taxonomy and decision tree model, demonstrates superiority in accuracy, recall and precision about methods based only on LLMs.\newline.
+It is recommended that future research explore different domains, scalability, comparisons with other methodologies and model interpretability techniques.
+\newline
+The article \cite{kamalrudin2017maramaaic} presents the MaramaAIC (Automated Inconsistency Checker) tool (Automated Inconsistency Checker) for consistency management and validation of software requirements, with automated traceability and visual support. This tool benefits the requirements engineering community and software development professionals. It stands out for its clarity in methodology and evaluation, but it is necessary to consider the scope and representativeness of the studies. Limitations include improvements in usability and expansion of the library of interaction patterns, with recommendations for future research to integrate advanced Natural Language Processing techniques.
